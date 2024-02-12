@@ -161,3 +161,48 @@ h1, h2 {
 .card-title{
     font-size: 3rem;
 }
+
+/* Media query para dispositivos móviles y tablets */
+@media (max-width: 992px) {
+    #imagenHero {
+      max-width: 100%; /* Establece el ancho máximo al 100% del contenedor */
+      border-radius: 0; /* Quita el borde redondeado si se aplica en dispositivos más grandes */
+      margin-top: 100px; /* Añade un margen superior para evitar que la imagen se tape con el navbar */
+    }
+  }
+
+  @media (max-width: 992px) {
+    .navbar.fixed-top {
+      position: static;
+    }
+  
+    body {
+      padding-top: 70px; /* Altura aproximada del navbar */
+    }
+  
+    #content {
+      margin-top: 0; /* Eliminamos el margen superior */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container.text-center {
+      display: flex;
+      flex-direction: row; /* Cambiar de columna a fila */
+      justify-content: center; /* Centrar los elementos horizontalmente */
+      align-items: center; /* Centrar los elementos verticalmente */
+    }
+    
+    .container.text-center img {
+      max-width: 30%; /* Ajusta el tamaño del logo */
+      margin-right: 10px; /* Agrega un margen derecho */
+    }
+    
+    .container.text-center .honk-font a {
+      font-size: 1.2rem; /* Tamaño de fuente más pequeño para el título */
+    }
+  }
+  
+  
+  
+  
